@@ -1,4 +1,6 @@
 import { Component, OnInit } from "@angular/core";
+import { State } from "src/app/shared/state";
+
 import {
   BookModel,
   calculateBooksGrossEarnings,
@@ -6,7 +8,7 @@ import {
 } from "src/app/shared/models";
 import { BooksService } from "src/app/shared/services";
 import {BooksPageActions} from "../../actions";
-import {State, Store} from "@ngrx/store";
+import {Store} from "@ngrx/store";
 
 @Component({
   selector: "app-books",
